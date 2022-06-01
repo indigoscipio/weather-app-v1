@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;500&display=swap");
+html {
+  font-size: 62.5%;
+  box-sizing: border-box; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1.8rem;
+  font-family: "Rubik", sans-serif;
+  line-height: 1.6;
+  color: #1e293b; }
+
+button {
+  cursor: pointer;
+  padding: 1.6rem;
+  border-radius: 0.8rem;
+  border: none; }
+
+input {
+  border: none;
+  padding: 1.6rem;
+  border-radius: 0.8rem;
+  font-family: inherit; }
+  input:focus {
+    border: 2px solid #bae6fd;
+    outline: none; }
+
+.header {
+  color: #f8fafc;
+  padding: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0284c7;
+  gap: 2.4rem;
+  font-size: 1.4rem; }
+  @media (min-width: 576px) {
+    .header {
+      flex-direction: row;
+      font-size: 1.8rem; } }
+  .header__logo {
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.8rem; }
+  .header__form {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem; }
+
+.container {
+  background-color: #f1f5f9;
+  height: 100vh; }
+
+.content {
+  margin: 0 auto;
+  display: block;
+  max-width: 78rem;
+  text-align: center;
+  padding: 6.4rem; }
+  .content__city {
+    display: flex;
+    justify-content: center;
+    gap: 2.4rem;
+    font-size: 3.2rem; }
+  .content__country {
+    font-size: 3.2rem;
+    color: #94a3b8; }
+  .content__main-temp {
+    font-size: 12.8rem; }
+  .content__details {
+    display: flex;
+    justify-content: center;
+    gap: 3.2rem; }
+    .content__details .fa-solid {
+      margin-right: 0.8rem; }
